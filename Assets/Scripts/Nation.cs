@@ -113,7 +113,7 @@ public class Nation
     // Esimerkki "Viljasiilot" -buffista, joka kestää 3 seuraavaa vuoroa
     public int viljasiilotBuffTurns = 0; // Kuinka monella vuorolla vielä +2% lisäkasvu
 
-    // Esimerkki, jos haluat että "Laajentamisen tehostus" on jo aktivoitu
+
     // ja "Valtakunnan laajentaminen" -kortti valtaa 5 ruutua tms.
     // Laita boolean. Täällä esimerkissä ei ole toteutettu laajennuslogiikkaa.
     public bool isExpansionBuff5Active = false;
@@ -232,7 +232,7 @@ public class Nation
         //Debug.Log("Väliaikaiset kasvumodifikaattorit nollattu.");
     }
 
-    // Jos haluat korottaa MilitaryTechiä vain korteilla, niin ehkä erillisen metodin
+   
     public void SetMilitaryTech(float newValue)
     {
         MilitaryTech = newValue;
@@ -372,7 +372,7 @@ public class Nation
 
     public void IncreasePopulationGrowthByPercent(float percent)
     {
-        // Jos haluat suoraan skaalata, esim. +3% -> kerrotaan 1.03f
+       
         // Täällä käytän pysyvää kerrointa
         AddPopulationGrowthMultiplier(percent);
     }

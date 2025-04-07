@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  // Vaihda TextMeshPro:n nimiavaruus jos käytät TMP
-using TMPro;          // jos käytössä TextMeshPro
+using UnityEngine.UI;  
+using TMPro;         
 using System.Linq;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -270,7 +270,7 @@ public class GameManager : MonoBehaviour
                 tradePanel.gameObject.SetActive(false); // Piilotetaan TradePanel alussa
             }
 
-            // Hae AIController (jos se on Sceneen)
+            // Haetaa AIController
             aiController = FindObjectOfType<AIController>();
 
 
@@ -286,7 +286,7 @@ public class GameManager : MonoBehaviour
                 // Varmistetaan, että paneeli on piilotettu pelin alussa
                 GameOverPanel.SetActive(false);
 
-                // Jos haluat hakea myös GameOverButtonin, niin:
+                
                 Button gameOverButton = GameOverPanel.transform.Find("GameOverButton")?.GetComponent<Button>();
                 if (gameOverButton != null)
                 {
@@ -1554,7 +1554,7 @@ public class GameManager : MonoBehaviour
     {
         if (completeToggleCardsButton != null)
         {
-            // Jos käytössä on tavallinen UI.Text:
+           
             Text buttonText = completeToggleCardsButton.GetComponentInChildren<Text>();
             if (buttonText != null)
             {
@@ -1562,7 +1562,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                // Jos käytetään TextMeshProa:
+               
                 TMPro.TextMeshProUGUI tmpText = completeToggleCardsButton.GetComponentInChildren<TMPro.TextMeshProUGUI>();
                 if (tmpText != null)
                 {

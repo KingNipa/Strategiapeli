@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;  // Vaihda TextMeshPro:n nimiavaruus jos käytät TMP
-using TMPro;          // jos käytössä TextMeshPro
+using UnityEngine.UI;  
+using TMPro;         
 using System.Linq;
 using System.Collections;
 

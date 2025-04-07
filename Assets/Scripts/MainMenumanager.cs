@@ -7,7 +7,7 @@ public class MainMenuManager : MonoBehaviour
     // Viite main menu -canvas-objektiin GameScenessä.
     // Varmista, että tämä kenttä on asetettu Inspectorissa tai että sen nimi GameScenessä on "MainMenuCanvas"
     public GameObject mainMenuCanvas;
-    public SquareGrid squareGrid; // Jos käytät esimerkiksi RevealEntireMap()-metodia
+    public SquareGrid squareGrid; 
 
     // UI-painike, joka näkyy päävalikossa
     public Button muteButton;
@@ -55,8 +55,7 @@ public class MainMenuManager : MonoBehaviour
             mainMenuCanvas.SetActive(false);
     }
 
-    // Jos MainMenuManager on osa persistent (DontDestroyOnLoad) GameManageria,
-    // kannattaa myös päivittää viittaukset, kun GameScene ladataan.
+    // kannattaa myös päivittää viittaukset, kun GameScene ladataan!
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
