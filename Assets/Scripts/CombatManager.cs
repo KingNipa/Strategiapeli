@@ -88,7 +88,7 @@ public class CombatManager : MonoBehaviour
 
             // Alustetaan laskuri vallatuille ruuduille
             int capturedTilesCount = 0;
-            // Uusi logiikka: toistetaan, kunnes siirrettävien ruutujen määrä loppuu
+            // toistetaan, kunnes siirrettävien ruutujen määrä loppuu
             while (tilesToTransfer > 0)
             {
                 // Lasketaan eligible-ruudut dynaamisesti: etsitään kaikki puolustajan ruudut,
@@ -166,7 +166,7 @@ public class CombatManager : MonoBehaviour
 
             //Debug.Log($"Puolustaja menetti {defenderLosses} yksikköä, hyökkääjä menetti {attackerLosses} yksikköä.");
 
-            // Uusi lisäys: vähennetään väkilukua menetettyjen armeija­yksiköiden verran
+            //vähennetään väkilukua menetettyjen armeija­yksiköiden verran
             defender.Population = Mathf.Max(defender.Population - defenderLosses, 0f);
             attacker.Population = Mathf.Max(attacker.Population - attackerLosses, 0f);
 

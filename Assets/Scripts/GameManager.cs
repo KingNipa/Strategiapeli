@@ -29,11 +29,11 @@ public class GameManager : MonoBehaviour
     public Text gdpText;
     public Text militaryText;
     public Text technologyText;
-    public Text militaryPowerText; // Uusi elementti
-    public Text moraleText;        // Uusi elementti moraalin näyttämiseen
+    public Text militaryPowerText; 
+    public Text moraleText;       
     public Text yearText;
     public Text militaryExpenditureText; // UI-teksti armeijan kulutukselle
-    public Text gdpIncomeText; // Näyttää paljon tuloja tulee per vuoro
+    public Text gdpIncomeText; 
     public Text populationGrowthText;
 
     // Korttipainikkeet
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     public Button cardButton3;
     public Button endTurnButton; // End Turn -painike
 
-    public Nation playerNation { get; private set; } // Päivitetty julkiseksi
+    public Nation playerNation { get; private set; } 
     public GameObject aiManagerPrefab;
 
     private CardDeck cardDeck;
@@ -1029,7 +1029,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    // Lisää uusi metodi armeijan pienennyksen palauttamiseen
+    // metodi armeijan pienennyksen palauttamiseen
     private void ResetArmyReduction()
     {
         // Palautetaan armaijan pienennysprosentti
@@ -1147,7 +1147,7 @@ public class GameManager : MonoBehaviour
         UpdateArmyReductionUI(); // Päivittää sliderin tekstiä
         UpdateExpensesUI();      // Päivittää armeijan kulutuksen näytön
 
-        // Uusi rivi: päivitetään net income heti
+        // päivitetään net income heti
         UpdateNetIncomeUI();
     }
 
@@ -1318,7 +1318,7 @@ public class GameManager : MonoBehaviour
         {
             grid.UpdateMapView();
         }
-        //Debug.Log("Uusi CurrentMapView: " + CurrentMapView);
+        //Debug.Log("CurrentMapView: " + CurrentMapView);
     }
 
     public void SetPlayerNationName(string name)
@@ -1527,7 +1527,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Uusi muuttuja korttien kokonaiselle piilottamiselle
+    // muuttuja korttien kokonaiselle piilottamiselle
     private bool cardsCompletelyHidden = false;
 
     // Viite uuteen painikkeeseen, jonka tekstiä päivitämme On/Off tilan mukaan.

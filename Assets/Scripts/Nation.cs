@@ -300,7 +300,7 @@ public class Nation
         float populationIncome = Population / 150000f;
         GDP += populationIncome;
 
-        // 5) Uusi: Lisätään korttien vaikutuksesta saatava tulo
+        // 5) Lisätään korttien vaikutuksesta saatava tulo
         GDP += IncomeBonusPerTurn;
 
         float militaryExpenditure = CalculateMilitaryExpenditure();
@@ -381,7 +381,7 @@ public class Nation
     // Kertyneet armeijan pienennyssäästöt nykyiseltä vuorolta
     public float AccumulatedArmyReductionIncome { get; private set; } = 0f;
 
-    // Uusi ominaisuus: Edellisen vuoron armeijan pienennyksen säästöt
+    //  Edellisen vuoron armeijan pienennyksen säästöt
     public float PreviousArmyReductionIncome { get; set; } = 0f;
 
     // Metodi, joka nollaa kuluvan vuoron armeijan pienennyksen säästöt

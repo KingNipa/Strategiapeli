@@ -24,7 +24,7 @@ public class NationInfoPanel : MonoBehaviour
     public GameObject panel;
     public Button warButton;
     public Button tradeButton;
-    public Button allianceButton;  // Uusi painike liittoehdotuksille
+    public Button allianceButton;  
 
 
     void Awake()

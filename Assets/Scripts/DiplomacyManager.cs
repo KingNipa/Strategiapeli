@@ -15,8 +15,6 @@ public class DiplomacyManager : MonoBehaviour
     public int minRelationship = -30;
     public int maxRelationship = 30;
 
-
-    // Uusi rakenne hyökkäyksiin
     public List<Alliance> Alliances { get; private set; } = new List<Alliance>();
     private HashSet<(Nation, Nation)> attackedPairs = new HashSet<(Nation, Nation)>();
 

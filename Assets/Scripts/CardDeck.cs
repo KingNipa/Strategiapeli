@@ -510,7 +510,7 @@ void Start()
         ));
     }
 
-    // Uusi metodi keskiajan korttien alustamiseen
+    // metodi keskiajan korttien alustamiseen
     public void InitializeSecondEraCards()
     {
         List<Card> secondEraCards = new List<Card>();
