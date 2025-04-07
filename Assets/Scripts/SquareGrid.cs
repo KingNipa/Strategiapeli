@@ -78,7 +78,7 @@ public class SquareGrid : MonoBehaviour
         }
     }
 
-    // New method to reveal a specific tile and its surroundings within a given radius
+   
     public void RevealTileAndSurroundings(SquareTile centerTile, int radius)
     {
         foreach (var tile in tiles)
@@ -92,11 +92,11 @@ public class SquareGrid : MonoBehaviour
         }
     }
 
-    // New method to reveal adjacent tiles when a new tile is conquered
+   
     public void RevealAdjacentTiles(SquareTile newlyControlledTile)
     {
      //   Debug.Log("RevealAdjacentTiles käynnistyi ruudulle: (" + newlyControlledTile.X + ", " + newlyControlledTile.Y + ")");
-        // Optionally, define a smaller radius for adjacent revelation
+       
         int revealRadius = 5; // 10
 
         RevealTileAndSurroundings(newlyControlledTile, revealRadius);
